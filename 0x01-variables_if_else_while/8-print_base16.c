@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main function
- * Return: 0(Success)
+ * Return: 0(Success)
  */
 int main(void)
 {
@@ -10,9 +10,9 @@ int main(void)
 
 	for (i = 0 ; i < 10 ; i++)
 		putchar(i + '0');
-        for (j = 'a' ; j <= 'f' ; j++)
-                putchar(j);
+	for (j = 'a' ; j <= 'f' ; j++)
+		putchar(j);
 	putchar('\n');
-        return (0);
+	return (0);
 }
 
