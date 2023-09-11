@@ -3,7 +3,7 @@
 /**
  * main - program that prints the alphabet in lowercase and uppercase
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
@@ -17,5 +17,4 @@ int main(void)
 	putchar('\n');
 
 	return (0);
-
 }
