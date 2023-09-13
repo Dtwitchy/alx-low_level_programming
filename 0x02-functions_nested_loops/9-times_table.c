@@ -2,8 +2,10 @@
 #include <stdio.h>
 
 /**
- * times_table - prints the 9 times table, starting with 0
+ * main - function that prints the 9 times table, starting with 0
+ *
  */
+
 void times_table(void)
 {
 	int i, j, result;
@@ -14,12 +16,12 @@ void times_table(void)
 		{
 			result = i * j;
 			if (j == 0)
-				print f("%d, ", result);
+				printf("%d, ", result);
 			else
 			{
 				printf("%2d", result);
 				if (j != 9)
-					printf(',');
+					printf(",");
 			}
 		}
 		printf("\n");
