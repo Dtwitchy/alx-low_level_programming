@@ -34,7 +34,6 @@ temp = *(n + j);
 * @size_r: buffer size
 * Return: pointer to calling function
 */
-
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 int overflow = 0, i = 0, j = 0, digits = 0;
