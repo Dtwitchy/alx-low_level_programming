@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 size_t looped_listint_len(const listint_t *head);
 size_t print_listint_safe(const listint_t *head);
@@ -15,39 +14,39 @@ size_t print_listint_safe(const listint_t *head);
 */
 size_t looped_listint_len(const listint_t *head)
 {
-const listint_t *mouse, *giraffe;
+const listint_t *tortoise, *hare;
 size_t nodes = 1;
 
 if (head == NULL || head->next == NULL)
 return (0);
 
-mouse = head->next;
-giraffe = (head->next)->next;
+tortoise = head->next;
+hare = (head->next)->next;
 
-while (giraffe)
+while (hare)
 {
-if (mouse == giraffe)
+if (tortoise == hare)
 {
-mouse = head;
-while (mouse != giraffe)
+tortoise = head;
+while (tortoise != hare)
 {
 nodes++;
-mouse = mouse->next;
-giraffe = giraffe->next;
+tortoise = tortoise->next;
+hare = hare->next;
 }
 
-mouse = mouse->next;
-while (mouse != giraffe)
+tortoise = tortoise->next;
+while (tortoise != hare)
 {
 nodes++;
-mouse = mouse->next;
+tortoise = tortoise->next;
 }
 
 return (nodes);
 }
 
-mouse = mouse->next;
-giraffe = (giraffe->next)->next;
+tortoise = tortoise->next;
+hare = (hare->next)->next;
 }
 
 return (0);
@@ -83,7 +82,6 @@ head = head->next;
 }
 
 printf("-> [%p] %d\n", (void *)head, head->n);
-exit(98);
 }
 
 return (nodes);
