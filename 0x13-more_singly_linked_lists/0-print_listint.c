@@ -21,4 +21,3 @@ h = h->next;
 
 return (numb);
 }
-
