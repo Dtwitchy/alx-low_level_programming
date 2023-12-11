@@ -1,1 +1,1 @@
-my dynamic linraries readme
+my dynamic libries readme
