@@ -53,7 +53,7 @@ int mul(int a , int b)
 
 
 /**
- * div - divide  two integers 
+ * my_div - divide  two integers 
  * @a: first init 
  * @b: second init 
  * Return: divide to get the  final result
