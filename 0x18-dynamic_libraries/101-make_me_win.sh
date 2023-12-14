@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P .. https://raw.githubusercontent.com/Dtwitchy/alx-low_level_programming/master/0x18-dynamic_libraries/libhacks.so
-export LD_PRELOAD="$PWD/../libhacks.so" 
+wget -P .. https://raw.githubusercontent.com/Dtwitchy/alx-low_level_programming/master/0x18-dynamic_libraries/libgiga.so
+export LD_PRELOAD="$PWD/../libgiga.so" 
