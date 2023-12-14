@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * add - add two integers 
@@ -53,12 +53,12 @@ int mul(int a , int b)
 
 
 /**
- * my_div - divide  two integers 
+ * div - divide  two integers 
  * @a: first init 
  * @b: second init 
  * Return: divide to get the  final result
  */
-int my_div(int a , int b)
+int div(int a , int b)
 {
         return (a / b);
 
